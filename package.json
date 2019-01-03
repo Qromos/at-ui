@@ -1,13 +1,13 @@
 {
   "name": "@qromos/at-ui",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name at-ui src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "feathericon": "^1.0.2",
     "vue": "^2.5.21"
   },
   "devDependencies": {
@@ -17,7 +17,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "vue-router": "^3.0.1"
   },
   "eslintConfig": {
     "root": true,
@@ -28,7 +29,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
