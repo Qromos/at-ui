@@ -7,11 +7,11 @@
     :class="classes"
     :to="to">
     <a class="at-menu-item-link">
-      <icon v-if="icon" :name="icon"/> {{ title }}
+      <icon class="at-menu-item-link-icon" v-if="icon" :name="icon"/> {{ title }}
     </a>
 
     <ul
-      class="at-menu-list --submenu"
+      class="at-submenu-list"
       v-if="$slots.default">
       <slot/>
     </ul>
@@ -38,10 +38,10 @@ export default {
     Icon
   },
   computed: {
-    classes: function () {
-      return [
-        this.$slots.default ? '--has-submenus' : null
-      ]
+    classes () {
+      return {
+          '--has-submenus': this.$slots.default
+      }
     }
   }
 }
