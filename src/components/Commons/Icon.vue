@@ -4,18 +4,21 @@
 
 <script>
 export default {
+  name: 'Icon',
   props: {
     name: {
       required: true,
       type: String
-    }
+    },
+    rotate: Boolean
   },
   computed: {
     classes: function() {
       return [
         'at-icon',
-        'fe',
-        `fe-${this.name}`
+        'fa',
+        `fa-${this.name}`,
+        this.rotate ? 'fa-spin' : null
       ]
     }
   }

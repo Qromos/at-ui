@@ -8,6 +8,8 @@
         <at-menu-item title="Categorias" to="/posts/categories"/>
       </at-menu-item>
       <at-menu-item icon="file" title="Páginas" to="/pages"/>
+      <at-menu-item icon="folder" title="Médias" to="/medias"/>
+      <at-menu-item icon="gear" title="Definições" to="/settings"/>
     </at-menu>
   </div>
 </template>
