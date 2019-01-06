@@ -6,8 +6,9 @@ import Card from './components/Card.vue'
 import Menu from './components/Menu.vue'
 import MenuItem from './components/MenuItem.vue'
 import FormGroup from './components/Form/FormGroup.vue'
-import FormInput from './components/Form/FormInput.vue'
-import FormTextarea from './components/Form/FormTextarea.vue'
+import Input from './components/Inputs/Input.vue'
+import Textarea from './components/Inputs/Textarea.vue'
+import Checkbox from './components/Inputs/Checkbox.vue'
 
 const components = [
   Button,
@@ -16,8 +17,9 @@ const components = [
   Menu,
   MenuItem,
   FormGroup,
-  FormInput,
-  FormTextarea
+  Input,
+  Textarea,
+  Checkbox
 ]
 
 const install = (Vue) => {
