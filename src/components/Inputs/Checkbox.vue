@@ -12,7 +12,7 @@
     <input
       class="at-checkbox__input"
       type="checkbox"
-      v-bind="$attrs"
+      :value="value"
       :checked="currentValue"
       @change="updateModel">
 
@@ -25,7 +25,8 @@ export default {
   name: 'Checkbox',
   props: {
     checked: Boolean,
-    label: String
+    label: String,
+    value: String
   },
   data() {
     return {
